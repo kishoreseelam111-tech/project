@@ -17,13 +17,15 @@ app.use(express.json());
 // డేటాబేస్ కనెక్షన్
 connectDB();
 
-// రూట్స్ సెటప్
+// రూట్స్ సెటప్ssss
 app.use('/api', authRoutes);
 app.use('/api', incidentRoutes);
 
 // సర్వర్ స్టార్ట్
+//uuu
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
+    console.log("hi")
     //npx plugins add vercel/vercel-plugin
     console.log(`సర్వర్ రన్ అవుతోంది: http://localhost:${PORT}`);
 });
